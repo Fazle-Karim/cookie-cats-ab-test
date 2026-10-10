@@ -1,6 +1,6 @@
 # Analysis plan
 
-**Written before looking at any results.** Date written: ____-__-__
+**Written before looking at any results.** Date written: 2026-10-10
 
 ## 1. Question and decision
 - Question: Does moving the first gate from level 30 to level 40 change player retention?
@@ -25,7 +25,7 @@
 
 ## 5. Decision rule
 - Smallest change that matters (practical threshold): 0.5 percentage points of day-7 retention.
-- Why this number: (write your own reasoning here, one or two sentences)
+- Why this number: (a change that small would move only about 1 in 200 new players, and may not justify changing a live game)
 - Ship gate_40 only if the whole confidence interval is above +0.5 pp.
 - Keep gate_30 if the whole interval is below -0.5 pp.
 - If the interval lies inside -0.5 to +0.5 pp: no practical difference.
