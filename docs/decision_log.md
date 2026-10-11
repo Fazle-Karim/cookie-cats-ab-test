@@ -1,18 +1,16 @@
 # Decision log
 
-One entry per decision. Keep each to three lines.
+# Decision log
 
-## D-001 Primary metric
-- Decision: day-7 retention.
-- Why: (your reasoning)
-- Date:
+## Primary metric
+Day-7 retention. Chosen before seeing results. Predicts long-term engagement
+better than day-1 retention, which is noisier.
 
-## D-002 Practical threshold
-- Decision: 0.5 percentage points.
-- Why:
-- Date:
+## Practical threshold
+0.5 percentage points. Below this, the change is likely too small to justify
+changing a live game.
 
-## D-003 Outlier handling
-- Decision:
-- Why:
-- Date:
+## Outlier handling
+Game rounds have a heavy right tail (max 49,854). Use medians and trimmed
+Welch test for the secondary rounds comparison. Keep the outlier in retention
+counts to avoid bias.
