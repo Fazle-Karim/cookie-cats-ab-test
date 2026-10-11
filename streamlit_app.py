@@ -15,14 +15,8 @@ THRESHOLD = 0.005   # smallest change that matters: 0.5 percentage points
 
 # Edit this text after you finish the analysis (it should match docs/memo.md).
 RECOMMENDATION = (
-    "The data cannot yet decide whether moving the gate to level 40 is safe. "
-    "Day-7 retention dropped by 0.82 percentage points in gate_40, and while this "
-    "difference is statistically significant, the confidence interval "
-    "(-1.33 to -0.31 pp) still overlaps the practical threshold of ±0.5 pp. "
-    "With ~45,000 players per group, the test could reliably detect effects of "
-    "0.74 pp or larger, but not the 0.5 pp threshold from the plan. "
-    "Recommendation: collect more data (roughly 98,000 players per group) "
-    "before deciding whether to move the gate or keep it at level 30."
+    "Do not move the first gate from level 30 to level 40 yet — the data cannot rule"
+    "out a meaningful drop in day-7 retention. Collect more data before deciding."
 )
 
 
