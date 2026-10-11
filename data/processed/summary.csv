@@ -1,0 +1,3 @@
+version,players,retained_day1,retained_day7,median_rounds,max_rounds,zero_round_players,trim_n,trim_mean_rounds,trim_std_rounds
+gate_30,44700,20034,8502,17.0,49854,1937,44655,50.00125405889598,91.92003277108707
+gate_40,45489,20119,8279,16.0,2640,2057,45443,49.90038069669696,92.88096940639132
