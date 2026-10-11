@@ -10,4 +10,4 @@ Fill this in while you run sql/01_quality_checks.sql. One line per check.
 | Min and max game rounds | Min = 0, Max = 49,854 | Max is extreme outlier | Use medians/trimmed methods for game rounds per analysis plan |
 | Players with zero rounds | gate_30: 1,937 (4.33%); gate_40: 2,057 (4.52%) | No | Kept them — removing would bias the sample |
 | Retained day 7 but not day 1 | gate_30: 1,826; gate_40: 1,773 | No | Logically possible; day flags measure specific days |
-| Retained with zero rounds | gate_30: 56; gate_40: 55 | No (unusual but explainable) | Kept them; app opened without playing |
+| Retained with zero rounds | gate_30: 56; gate_40: 55 | No (unusual but explainable) | Kept them; app opened without playing|
