@@ -4,6 +4,7 @@
 
 The data cannot yet decide. The day-7 retention difference is statistically significant (−0.82 pp, 95% CI −1.33 to −0.31 pp), but the confidence interval overlaps the practical threshold of ±0.5 pp, so the pre-registered decision rule returns **inconclusive**. Recommendation: collect more data (~98,000 players per group) before deciding.
 
+**Live app:** https://cookie-cats-ab-test.streamlit.app/
 📁 **Repository:** https://github.com/Fazle-Karim/cookie-cats-ab-test
 
 ![Streamlit app screenshot](docs/app_screenshot.png)
