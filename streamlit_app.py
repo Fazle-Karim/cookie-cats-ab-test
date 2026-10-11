@@ -15,8 +15,14 @@ THRESHOLD = 0.005   # smallest change that matters: 0.5 percentage points
 
 # Edit this text after you finish the analysis (it should match docs/memo.md).
 RECOMMENDATION = (
-    "Replace this paragraph with your recommendation from docs/memo.md: "
-    "what to do, the evidence in one sentence, and the main caveat."
+    "The data cannot yet decide whether moving the gate to level 40 is safe. "
+    "Day-7 retention dropped by 0.82 percentage points in gate_40, and while this "
+    "difference is statistically significant, the confidence interval "
+    "(-1.33 to -0.31 pp) still overlaps the practical threshold of ±0.5 pp. "
+    "With ~45,000 players per group, the test could reliably detect effects of "
+    "0.74 pp or larger, but not the 0.5 pp threshold from the plan. "
+    "Recommendation: collect more data (roughly 98,000 players per group) "
+    "before deciding whether to move the gate or keep it at level 30."
 )
 
 
@@ -31,6 +37,11 @@ summary, hist = load_data()
 ctrl, treat = summary.loc[CONTROL], summary.loc[TREATMENT]
 
 st.sidebar.header("Settings")
+st.sidebar.markdown("---")
+st.sidebar.markdown(
+    "**Built by Fazle Karim**  \n"
+    "[GitHub](https://github.com/Fazle-Karim)"
+)
 alpha = st.sidebar.slider("Significance level (alpha)", 0.01, 0.10, 0.05, 0.01)
 st.sidebar.caption("A lower alpha asks for stronger evidence. The intervals use "
                    "a confidence level of 1 - alpha.")
