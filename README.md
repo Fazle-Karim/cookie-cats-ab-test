@@ -2,10 +2,11 @@
 
 **Does moving the first gate from level 30 to level 40 change player retention?**
 
-The data cannot yet decide. The day-7 retention difference is statistically significant (−0.82 pp, 95% CI −1.33 to −0.31 pp), but the confidence interval overlaps the practical threshold of ±0.5 pp, so the pre-registered decision rule returns **inconclusive**. Recommendation: collect more data (~98,000 players per group) before deciding.
-
 **Live app:** https://cookie-cats-ab-test.streamlit.app/
-📁 **Repository:** https://github.com/Fazle-Karim/cookie-cats-ab-test
+
+**Result:** Moving the gate to level 40 lowered day-7 retention by 0.82 percentage points (95% CI −1.33 to −0.31 pp, p = 0.0016). The interval includes drops both smaller and larger than the 0.5 pp threshold set in advance, so the pre-registered decision rule returns **inconclusive**.
+
+**Recommendation (my judgement, not the rule):** keep the gate at level 30. There is no evidence that level 40 improves retention, and more data would only pin down how large the loss is. The bigger open question is revenue: a monetization gain is the only reason to accept a retention loss.
 
 ![Streamlit app screenshot](docs/app_screenshot.png)
 
